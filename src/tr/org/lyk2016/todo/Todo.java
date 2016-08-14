@@ -4,6 +4,7 @@ public class Todo {
 
 	private String description;
 	private boolean done;
+	private boolean undone;
 
 	public String getDescription() {
 		return description;
@@ -29,5 +30,8 @@ public class Todo {
 	public String getCheckbox(){
 		return done ? "☑" : "☐";
 	}
-
+    
+	public void unDone(boolean done){
+		this.undone=undone;
+	}
 }

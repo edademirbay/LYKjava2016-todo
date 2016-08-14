@@ -44,6 +44,10 @@ public class Application {
 			TodoHelper.mark(index - 1, true);
 			break;
 		case 3:
+			index=Integer.parseInt(param);
+			TodoHelper.remove(index-1);
+			
+			
 			// TODO use TodoHelper's remove method here
 			// hint: it's already implemented, you need to just call it (use it)
 			// here

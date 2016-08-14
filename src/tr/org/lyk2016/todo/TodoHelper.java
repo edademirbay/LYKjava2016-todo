@@ -26,12 +26,18 @@ public class TodoHelper {
 	 * @param isDone a boolean value which indicates whether it's done or not
 	 */
 	public static void mark(int index, boolean isDone) {
+		Todo todo=todos.get(index);
+		todo.setDone(isDone);
+		
 		// TODO you need to implement this method
+		
 	}
 
 	public static Iterator<Todo> getIterator() {
+		return todos.iterator();
+		
 		// TODO remove following exception and return an appropriate value
-		throw new UnsupportedOperationException("You need to implement (fill) this method's body.");
+		
 	}
 
 	public static Collection<Todo> getTodos() {
